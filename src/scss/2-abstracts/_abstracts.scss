@@ -1,0 +1,35 @@
+/*
+-------------------------------------
+            Colours
+-------------------------------------
+*/
+$col1: #da0d05;
+$col2: #010302;
+/*
+-------------------------------------
+            Typography/Fonts
+-------------------------------------
+*/
+$font1: "Bebas Neue", cursive;
+$font2: "Montserrat", sans-serif;
+
+$heading: 400;
+$text: 200;
+/*
+-------------------------------------
+            Mixins
+-------------------------------------
+*/
+@mixin center-items {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin main-background {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}

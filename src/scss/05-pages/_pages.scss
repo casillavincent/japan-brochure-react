@@ -1,0 +1,45 @@
+/*
+-------------------------------------
+            Index
+-------------------------------------
+*/
+@import "./index";
+
+/*
+-------------------------------------
+            Accomodations
+-------------------------------------
+*/
+@import "./accommodations";
+/*
+-------------------------------------
+            Culture
+-------------------------------------
+*/
+@import "./culture";
+/*
+-------------------------------------
+            Global 
+-------------------------------------
+*/
+.page-title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 175px;
+   &__title {
+      text-transform: uppercase;
+      font-family: $font1;
+      color: white;
+      border-bottom: 2px solid $col1;
+      padding-bottom: 5px;
+      font-size: 3em;
+   }
+   &__kanji {
+      color: $col1;
+      font-family: $font2;
+      font-size: 1.75em;
+      padding-top: 5px;
+   }
+}

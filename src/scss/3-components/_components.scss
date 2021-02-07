@@ -1,0 +1,21 @@
+@import "../2-abstracts/abstracts";
+/*
+-------------------------------------
+            Buttons
+-------------------------------------
+*/
+.scroll-top {
+   width: 150px;
+   height: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 25px auto 25px auto;
+   color: white;
+   transition: all 0.3s ease-out;
+   &:hover {
+      color: $col1;
+      cursor: pointer;
+   }
+}

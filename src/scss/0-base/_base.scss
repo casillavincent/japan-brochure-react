@@ -1,0 +1,41 @@
+/*
+-------------------------------------
+            Normalize
+-------------------------------------
+*/
+@import "./normalize";
+
+/*
+-------------------------------------
+            Google Fonts
+-------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;400&display=swap");
+@import "../2-abstracts/abstracts";
+/*
+-------------------------------------
+            Abstract
+-------------------------------------
+*/
+@import "../2-abstracts/abstracts";
+/*
+-------------------------------------
+            Selectors
+-------------------------------------
+*/
+html {
+   scroll-behavior: smooth;
+   * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+   }
+}
+body {
+   font-family: $font2;
+   @include main-background;
+   background-image: url("../../assets/bg001.jpg");
+}
+header {
+   font-family: $font1;
+}

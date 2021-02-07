@@ -1,0 +1,47 @@
+@import "../2-abstracts/abstracts";
+
+main.accommodations {
+   background: white;
+   width: 100%;
+
+   // Card Items
+   .accommodations-card {
+      width: 100%;
+      margin-bottom: 25px;
+      &__img {
+         width: 100%;
+      }
+      &__text {
+         padding: 15px;
+         h2 {
+            font-size: 1.3em;
+            span {
+               border-bottom: 3px solid $col1;
+               font-size: 0.9em;
+            }
+         }
+
+         // Paragraph
+         p {
+            font-size: 0.9em;
+            margin-top: 15px;
+         }
+      }
+   }
+   @media screen and (min-width: 900px) {
+      max-width: 900px;
+      margin: auto;
+      background-color: transparent;
+      .accommodations-card {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         background-color: white;
+         height: auto;
+         &__img {
+            width: 500px;
+            object-fit: none;
+         }
+      }
+   }
+}
