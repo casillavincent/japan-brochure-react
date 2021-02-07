@@ -1,7 +1,6 @@
 @import "../2-abstracts/abstracts";
 
 main.accommodations {
-   background: white;
    width: 100%;
 
    // Card Items
@@ -13,6 +12,7 @@ main.accommodations {
       }
       &__text {
          padding: 15px;
+         background: white;
          h2 {
             font-size: 1.3em;
             span {
@@ -35,8 +35,7 @@ main.accommodations {
       .accommodations-card {
          display: flex;
          flex-direction: row;
-         align-items: center;
-         background-color: white;
+         align-items: flex-end;
          height: auto;
          &__img {
             width: 500px;
