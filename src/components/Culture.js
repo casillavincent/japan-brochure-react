@@ -1,8 +1,19 @@
-import { FaRegFileArchive } from "react-icons/fa";
-
 import React from "react";
+import TopButton from "../components/TopButton";
+
+// Images
+import Art from "../assets/culture/art.png";
+import Cuisine from "../assets/culture/cuisine.png";
+import Fuji from "../assets/culture/landmark.png";
+import Pikachu from "../assets/culture/pop-culture.png";
+import Temple from "../assets/culture/religion.png";
+import History from "../assets/culture/history.png";
+//AOS Library
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Culture = () => {
+   AOS.init();
    return (
       <React.Fragment>
          {/* Page Title */}
@@ -11,7 +22,8 @@ const Culture = () => {
             <h2 className="page-title__kanji">文化</h2>
          </div>
 
-         <main className="culture">
+         {/* Culture main content */}
+         <main className="culture" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <section className="culture-about">
                <h2 className="culture-about__title">Why Choose Japan?</h2>
                <p className="culture-about__text">
@@ -57,79 +69,50 @@ const Culture = () => {
             </section>
 
             <section className="culture-bubbles">
-               {/* First Row */}
-               <div className="row01">
-                  <article>
-                     <img
-                        src="images/culture/cuisine.png"
-                        alt="Sushi Photo"
-                        width="150"
-                        height="150"
-                     />
-                     <h2>Cuisine</h2>
-                     <button type="button">More Info</button>
-                  </article>
+               {/* Cuisine */}
+               <article>
+                  <img src={`${Cuisine}`} alt="Sushi Photo" width="150" height="150" />
+                  <h2>Cuisine</h2>
+                  <button type="button">More Info</button>
+               </article>
 
-                  <article>
-                     <img
-                        src="images/culture/history.png"
-                        alt="Geisha Photo"
-                        width="150"
-                        height="150"
-                     />
-                     <h2>History</h2>
-                     <button type="button">More Info</button>
-                  </article>
+               {/* Geisha */}
+               <article>
+                  <img src={`${History}`} alt="Geisha Photo" width="150" height="150" />
+                  <h2>History</h2>
+                  <button type="button">More Info</button>
+               </article>
 
-                  <article>
-                     <img
-                        src="images/culture/art.png"
-                        alt="Japan Fish Photo"
-                        width="150"
-                        height="150"
-                     />
-                     <h2>Art & Music</h2>
-                     <button type="button">More Info</button>
-                  </article>
-               </div>
+               {/* Fish Flag */}
+               <article>
+                  <img src={`${Art}`} alt="Japan Fish Photo" width="150" height="150" />
+                  <h2>Art & Music</h2>
+                  <button type="button">More Info</button>
+               </article>
 
-               {/* Second Row */}
-               <div className="row02">
-                  <article>
-                     <img
-                        src="images/culture/pop-culture.png"
-                        alt="Pikachu Photo"
-                        width="150"
-                        height="150"
-                     />
-                     <h2>Pop Culture</h2>
-                     <button type="button">More Info</button>
-                  </article>
+               {/* Pikachu */}
+               <article>
+                  <img src={`${Pikachu}`} alt="Pikachu Photo" width="150" height="150" />
+                  <h2>Pop Culture</h2>
+                  <button type="button">More Info</button>
+               </article>
 
-                  <article>
-                     <img
-                        src="images/culture/landmark.png"
-                        alt="Mount Fuji Photo"
-                        width="150"
-                        height="150"
-                     />
-                     <h2>Landmarks</h2>
-                     <button type="button">More Info</button>
-                  </article>
+               {/* Mount Fuji */}
+               <article>
+                  <img src={`${Fuji}`} alt="Mount Fuji Photo" width="150" height="150" />
+                  <h2>Landmarks</h2>
+                  <button type="button">More Info</button>
+               </article>
 
-                  <article>
-                     <img
-                        src="images/culture/religion.png"
-                        alt="Temple Photo"
-                        width="150"
-                        height="150"
-                     />
-                     <h2>Religion</h2>
-                     <button type="button">More Info</button>
-                  </article>
-               </div>
+               {/* Temple Photo */}
+               <article>
+                  <img src={`${Temple}`} alt="Temple Photo" width="150" height="150" />
+                  <h2>Religion</h2>
+                  <button type="button">More Info</button>
+               </article>
             </section>
          </main>
+         <TopButton />
       </React.Fragment>
    );
 };

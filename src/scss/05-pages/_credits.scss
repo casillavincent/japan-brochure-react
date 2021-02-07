@@ -1,0 +1,30 @@
+@import "../2-abstracts/abstracts";
+main.credits {
+   background-color: white;
+   padding: 15px;
+   font-size: 1em;
+   section {
+      margin-bottom: 20px;
+      text-align: center;
+
+      h3 {
+         margin-bottom: 10px;
+         font-family: $font1;
+         font-size: 1.5em;
+      }
+      ul li {
+         list-style-type: none;
+         margin-bottom: 3px;
+         a {
+            color: $col1;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 500px) {
+   main.credits {
+      max-width: 900px;
+      margin: auto;
+   }
+}

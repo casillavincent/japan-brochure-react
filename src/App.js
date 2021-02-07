@@ -7,9 +7,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./components/Index";
 import Accommodations from "./components/Accommodations";
 import Culture from "./components/Culture";
+import Explore from "./components/Explore";
+import Credits from "./components/Credits";
 function App() {
    return (
-      <Router>
+      <Router basename={"/discover-japan"}>
          <React.Fragment>
             <Header />
 
@@ -19,6 +21,8 @@ function App() {
                   <Route path="/" exact component={Homepage} />
                   <Route path="/accommodations" component={Accommodations} />
                   <Route path="/culture" component={Culture} />
+                  <Route path="/explore" component={Explore} />
+                  <Route path="/credits" component={Credits} />
                </Switch>
             </div>
             <Footer />

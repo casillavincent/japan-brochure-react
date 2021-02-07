@@ -29,6 +29,14 @@ const Header = () => {
       return () => window.removeEventListener("scroll", hideNavOnScroll);
    }, [isOpen]);
 
+   function hide_nav_onClick() {
+      const navigationSelector = document.querySelector("nav.main-navigation");
+      if (navigationSelector.classList.contains("show-navigation")) {
+         navigationSelector.classList.remove("show-navigation");
+      }
+      setIsOpen(false);
+   }
+
    return (
       <header>
          <Headroom>
@@ -41,7 +49,11 @@ const Header = () => {
 
             {/* Navigation */}
             <nav className="main-navigation">
-               <ul>
+               <ul
+                  onClick={() => {
+                     hide_nav_onClick();
+                  }}
+               >
                   <li>
                      <Link to={"/accommodations"}>Accommodations</Link>
                   </li>
@@ -49,7 +61,7 @@ const Header = () => {
                      <Link to={"/culture"}>Culture</Link>
                   </li>
                   <li>
-                     <Link>Activities</Link>
+                     <Link to={"/explore"}>Explore</Link>
                   </li>
                </ul>
             </nav>

@@ -1,4 +1,96 @@
 @import "../2-abstracts/abstracts";
 main.culture {
    background: white;
+   width: 100%;
+   font-size: 1em;
+   max-width: 900px;
+   margin: auto;
+   padding: 25px 0px 25px 0px;
+
+   .culture-about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 550px;
+      margin: auto;
+      &__title {
+         font-family: $font1;
+         color: $col1;
+         margin-top: 15px;
+         margin-bottom: 15px;
+      }
+      &__text {
+         font-size: 0.85em;
+         line-height: 1.25em;
+         padding: 0px 15px 0px 15px;
+         @media screen and (min-width: 800px) {
+            line-height: 22px;
+         }
+      }
+      &__table {
+         font-size: 0.8em;
+         text-align: center;
+         width: 90%;
+         border-top: 2px solid $col1;
+         border-bottom: 2px solid $col1;
+         margin-top: 40px;
+         margin-bottom: 20px;
+         padding: 5px 0px 5px 0px;
+         @media screen and (min-width: 800px) {
+            font-size: 0.85em;
+         }
+      }
+   }
+}
+
+main.culture {
+   .culture-bubbles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 500px;
+      margin: auto;
+      @media screen and (min-width: 350px) {
+         grid-template-columns: repeat(3, 1fr);
+      }
+
+      article {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 175px;
+         @media screen and (min-width: 900px) {
+            height: 250px;
+         }
+         img {
+            width: 90px;
+            height: auto;
+            border-radius: 150px;
+            padding: 6px;
+            border: 2px dotted $col1;
+            @media screen and (min-width: 900px) {
+               width: 120px;
+            }
+         }
+         h2 {
+            font-family: $font1;
+            font-size: 1.25em;
+            color: $col1;
+            margin-top: 10px;
+            margin-bottom: 5px;
+         }
+         button {
+            padding: 2px 5px 2px 5px;
+            background-color: transparent;
+            border: 1px solid gray;
+            color: gray;
+            transition: all 0.3s ease-out;
+            &:hover {
+               border: 1px solid $col1;
+               color: $col1;
+               cursor: pointer;
+            }
+         }
+      }
+   }
 }

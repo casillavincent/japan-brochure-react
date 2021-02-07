@@ -2,10 +2,15 @@ import React from "react";
 import Banner from "../assets/japan-logo.svg";
 import TopButton from "./TopButton";
 
+//AOS Library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Index = () => {
+   AOS.init();
    return (
       <>
-         <main className="homepage">
+         <main className="homepage" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             {/* Banner */}
             <section className="japan-banner">
                <img src={`${Banner}`} alt="Japan Banner" />
