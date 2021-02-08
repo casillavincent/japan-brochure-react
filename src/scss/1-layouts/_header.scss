@@ -68,6 +68,10 @@ header {
                font-size: 0.8rem;
                font-weight: 400;
                text-transform: uppercase;
+               transition: all 0.4s ease-out;
+               &:hover {
+                  color: $col1;
+               }
             }
          }
       }

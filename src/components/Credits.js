@@ -1,7 +1,12 @@
 import React from "react";
 import TopButton from "../components/TopButton";
 
+//AOS Library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Credits = () => {
+   AOS.init();
    return (
       <React.Fragment>
          {/* Page Title */}
@@ -9,7 +14,7 @@ const Credits = () => {
             <h1 className="page-title__title">Credits</h1>
             <h2 className="page-title__kanji">クレジット</h2>
          </div>
-         <main className="credits">
+         <main className="credits" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <section className="credits___photos">
                <h3>Photos</h3>
                <ul>

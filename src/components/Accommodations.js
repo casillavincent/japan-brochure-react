@@ -25,7 +25,11 @@ const Accommodations = () => {
 
          <main className="accommodations">
             {/* Ryokan */}
-            <section className="accommodations-card" data-aos="fade-down">
+            <section
+               className="accommodations-card"
+               data-aos="fade-up"
+               data-aos-anchor-placement="center-bottom"
+            >
                <img
                   className="accommodations-card__img"
                   src={`${Ryokan}`}
@@ -55,7 +59,11 @@ const Accommodations = () => {
             </section>
 
             {/* Manga Cafe */}
-            <section className="accommodations-card" data-aos="fade-down">
+            <section
+               className="accommodations-card"
+               data-aos="fade-up"
+               data-aos-anchor-placement="center-bottom"
+            >
                <img
                   className="accommodations-card__img"
                   alt="Ryokan"
@@ -85,7 +93,11 @@ const Accommodations = () => {
             </section>
 
             {/* Capsule Hotel */}
-            <section className="accommodations-card" data-aos="fade-down">
+            <section
+               className="accommodations-card"
+               data-aos="fade-up"
+               data-aos-anchor-placement="center-bottom"
+            >
                <img
                   className="accommodations-card__img"
                   alt="Ryokan"
@@ -115,7 +127,11 @@ const Accommodations = () => {
             </section>
 
             {/* Temple */}
-            <section className="accommodations-card" data-aos="fade-down" data-aos-mirror="true">
+            <section
+               className="accommodations-card"
+               data-aos="fade-up"
+               data-aos-anchor-placement="center-bottom"
+            >
                <img
                   className="accommodations-card__img"
                   alt="Ryokan"

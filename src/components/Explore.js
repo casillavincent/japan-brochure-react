@@ -24,7 +24,7 @@ const Explore = () => {
          {/* Content */}
          <main className="explore">
             <section className="explore-info">
-               <article data-aos="fade-up-right">
+               <article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <img src={`${Train}`} alt="Bullet Train" width="300" height="200" />
                   <div className="explore-text">
                      <h3>Ride Japan's Bullet Train</h3>
@@ -41,7 +41,7 @@ const Explore = () => {
                   </div>
                </article>
 
-               <article data-aos="fade-up-right">
+               <article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <img src={`${Food}`} alt="Street Food" width="300" height="200" />
                   <div className="explore-text">
                      <h3>Discover Local Foods</h3>
@@ -58,7 +58,7 @@ const Explore = () => {
                   </div>
                </article>
 
-               <article data-aos="fade-up-right">
+               <article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <img src={`${Geisha}`} alt="Geisha Flyer" width="300" height="200" />
                   <div className="explore-text">
                      <h3>Learn the History of Geishas</h3>
@@ -75,7 +75,7 @@ const Explore = () => {
                   </div>
                </article>
 
-               <article data-aos="fade-up-right">
+               <article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <img src={`${Shrine}`} alt="Red Shrine" width="300" height="200" />
                   <div className="explore-text">
                      <h3>Explore Shrines & Temples</h3>
@@ -92,7 +92,7 @@ const Explore = () => {
                   </div>
                </article>
 
-               <article data-aos="fade-up-right">
+               <article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <img src={`${Robot}`} alt="Robot Restaurant" width="300" height="200" />
                   <div className="explore-text">
                      <h3>Spend the night at the Robot Restaurant</h3>
